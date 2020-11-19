@@ -164,7 +164,7 @@ yarn_prune_devdependencies() {
     echo "Skipping because YARN_PRODUCTION is '$YARN_PRODUCTION'"
     meta_set "skipped-prune" "true"
     return 0
-  elif [ -n "$SKIP_DEV_DEPS_PRUNING"]; then
+  elif [ -n "$SKIP_DEV_DEPS_PRUNING" ]; then
     echo "Skipping because SKIP_DEV_DEPS_PRUNING is '$SKIP_DEV_DEPS_PRUNING'"
     meta_set "skipped-prune" "true"
     return 0
